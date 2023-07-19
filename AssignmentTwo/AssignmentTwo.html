@@ -1,0 +1,76 @@
+<!--Purpose: Respond to Assigment Two for 420-WB4-AB WEBSITE DESIGN
+Author: Debora Correa Batista Bastos 6213122 -- January 20th 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Assigment Two Form</title>
+      <style>
+        * {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      </style>
+    </meta> 
+  </head>
+  
+  <body>
+    <h1>Black Goose Bistro | Pizza-on-Demand </h1>
+    <p> Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+    <h2>Your Information</h2>
+    <form action="http://blackgoosebistro.com/pizza.php" method="post">
+      <p><label for="iname">Name:</label> <input type="text" name="customername"id="iname"></p>
+      <p><label for="iaddress">Address:</label> <input type="text" name="address"id="iaddress"></p>
+      <p><label for="itelephone">Telephone Number:</label> <input type="tel" name="telephone"id="itelephone"></p>
+      <p><label for="iemail">Email:</label> <input type="email" name="email"id="iemail"></p>
+      <p>
+        <label for="iinstructions">Delivery instructions:</label><br>
+        <textarea 
+        name="instructions"id="iinstructions" required maxlenght="400" placeholder="No more than 400 characters long" cols="40" rows="5"></textarea>
+      </p>
+
+    <h2>Design Your Dream Pizza</h2>
+    <h3>Pizza specs</h3>
+
+    <fieldset>
+        <legend>Crust (Choose one):</legend>
+         <label>
+          <input type="radio" value="1" name="fooby[1][]"/>Multigrain
+        </label><br>
+        <label>
+          <input type="radio" value="1" name="fooby[1][]"/>Cheese-stuffed crust
+        </label><br>
+        <label>
+          <input type="radio" value="1" name="fooby[1][]"/>Gluten-free
+        </label><br>
+    </fieldset>
+      
+    <fieldset>
+      <legend>Toppings (Choose as many as you want):</legend>
+        <input type="checkbox" name="Toppings[1][]" checked> Red sauce<br>
+        <input type="checkbox" name="Toppings[2][]"> White sauce<br>
+        <input type="checkbox" name="Toppings[3][]"> Mozzarella Cheese<br>
+        <input type="checkbox" name="Toppings[4][]"> Pepperoni<br>
+        <input type="checkbox" name="Toppings[5][]"> Mushrooms<br>
+        <input type="checkbox" name="Toppings[6][]"> Peppers<br>
+        <input type="checkbox" name="Toppings[7][]"> Anchovies<br>
+    </fieldset>
+
+    <h3>Number</h3>
+    <p>
+      <label for="i#pizza">How many pizzas:</label> 
+      <select name="#pizza"id="i#pizza" size="1" >
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4 </option>
+        <option value="5"> 5 </option>
+        <option value="6"> 6 </option>
+        </select>
+    </p>
+    
+    <p><input type="submit"value="Order my pizza!"> <input type="submit"value="Reset"></p>
+  </form>
+  </body>
+</html>
